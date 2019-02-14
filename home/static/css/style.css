@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+body{
+    margin: 0 0;
+    /* background-image: url("/home/alphatech/kumpulan/CSS/project-css-layouting/img/sample-pattern.png"); */
+    background-color: white;
+}
+
+.black{
+    color: black;
+}
+
+.white{
+    color: white;
+    font-weight: normal;
+}
+
+header{
+    background-color: #3ad0e8
+}
+
+header h3{
+    margin: 10px 10px;
+}
+
+.page-header{
+    background-color: #3ad0e8;
+}
+
+.marginmid {
+    margin: auto auto;
+    text-align: center;
+}
+
+.width100{
+    width: 100%;
+}
+
+.page-header h1{
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.page-header p{
+    margin: 10px auto 30px auto;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.borderdetail{
+    border: 1.5px solid lightgrey;
+}
+
+.box{
+    margin: auto 10px;
+    text-align: center;
+    width: 125px;
+    height: 125px;
+    padding-top: 30;
+    border: 1.5px solid lightgrey;
+}
+
+.footer1{
+    background-color: #3ad0e8;
+}
+
+.footer1 h3{
+    margin-top: 25px
+}
+
+.footer2{
+    background-color: black;
+    padding: 10px 0;
+}
+
+.whitebold{
+    color: white;
+    font-weight: bold;
+}
+
+.blue{
+    color: blue;
+    font-weight: normal;
+}
+
+.blogh2{
+    padding: 0 356;
+}
+
+.blogp{
+    padding: 0 356;
+}
+
+.bloga{ 
+    padding: 0 356;
+}
+
+td{
+    padding-bottom: 30;
+}

@@ -1,0 +1,10 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+<h2 class="marginmid">New Post</h2>
+<form method="POST" class="post-form marginmid">{%csrf_token %}
+    {{ form.as_p}}
+    <button type="submit" class="save btn 
+    btn-default">Save</button>
+</form>
+{% endblock %}

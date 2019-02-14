@@ -1,0 +1,122 @@
+{% load static %}
+
+<html>
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" >
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 col-12" style="background-color:darkcyan;">
+                <a style=" padding-top: 15px" class="nav-link white" href="/"><strong>Toko Online</strong></a>
+            </div>
+            <div class="col-md-2 col-12">
+                <nav class="navbar navbar-expand-sm">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav marginmid">
+                            <li class="nav-item active"><a class="nav-link white" href="/"><strong>Home</strong></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <br>
+    <br>
+    <div class="content_img">
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-12 borderdetail">
+                <img class="width100" src="{% static 'images/iphone.jpg' %}">       
+            </div>
+            <div class="col-md-4 col-12 borderdetail">
+                <img class="width100" src="{% static 'images/sepatu.jpg' %}">       
+            </div>
+            <div class="col-md-4 col-12 borderdetail">
+                <img class="width100" src="{% static 'images/motor.jpg' %}">       
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-12 borderdetail">
+                <h3><strong>Iphone X</strong></h3>
+                <span>Rp. 15.000.000</span><br>
+                <a href="#">Lihat_Details</a>       
+            </div>
+            <div class="col-md-4 col-12 borderdetail">
+                <h3><strong>Sepatu Vans</strong></h3>
+                <span>Rp. 799.000</span><br>
+                <a href="#">Lihat_Details</a>        
+            </div>
+            <div class="col-md-4 col-12 borderdetail">
+                <h3><strong>Motor</strong></h3>
+                <span>Rp. 35.000.000</span><br>
+                <a href="#">Lihat_Details</a>        
+            </div>
+        </div>
+        <br>
+        <div class="content_img">
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-12 borderdetail">
+                    <img class="width100" src="{% static 'images/kompor.jpg' %}">       
+                </div>
+                <div class="col-md-4 col-12 borderdetail">
+                    <img class="width100" src="{% static 'images/monitor.jpg' %}">       
+                </div>
+                <div class="col-md-4 col-12 borderdetail">
+                    <img class="width100" src="{% static 'images/mobil.jpg' %}">       
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-12 borderdetail">
+                    <h3><strong>Kompor</strong></h3>
+                    <span>Rp. 2.000.000</span><br>
+                    <a href="#">Lihat_Details</a>       
+                </div>
+                <div class="col-md-4 col-12 borderdetail">
+                    <h3><strong>Monitor</strong></h3>
+                    <span>Rp. 799.000</span><br>
+                    <a href="#">Lihat_Details</a>        
+                </div>
+                <div class="col-md-4 col-12 borderdetail">
+                    <h3><strong>Mobil</strong></h3>
+                    <span>Rp. 100.000.000</span><br>
+                    <a href="#">Lihat_Details</a>        
+                </div>
+            </div>        
+        </div>
+    </div>    
+    <br>
+    <div class="row">
+    {% for barang in mybarang %}
+        <div class="col-md-4 col-12 borderdetail">
+            <img class="width100" src="{{barang.gambar}}">
+            <h3><strong>{{barang.nama}}</strong></h3>
+            <span>Rp. {{barang.harga}}</span><br>
+            <a href="#">Lihat_Details</a>        
+        </div>
+    {% endfor %}
+    </div>
+    
+    
+    <div class="footer">
+        <div class="footer1">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-12">
+                    <h3>Our Product:<img src="{% static 'images/logo-grey-alphapay.png' %}"> <img src="{% static 'images/logo-grey-sepulsa.png' %}"><img src="{% static 'images/logo-grey-alphabill.png' %}"></h3>       
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-12">
+                <span class="whitebold">Contact Person: <span class="white">Mobile phone: 0877 9609 9530. Email: <span class="blue">academy@alphatech.id</span></span></span>    
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <script src="{% static 'js/bootstrap.min.js' %}"></script> 
+</body>
+ 
+</html>
